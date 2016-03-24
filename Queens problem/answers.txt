@@ -1,0 +1,5 @@
+
+#1) The least n for which it takes more than 5 seconds is 11, and it takes 37 seconds.
+
+#2 & #3) The least n for which it takes more than 5 seconds is 13, and it takes 22 seconds.
+
