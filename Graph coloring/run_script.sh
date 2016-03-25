@@ -2,7 +2,7 @@
 
 TIME_LIMIT=15 # In secs.
 BENCH_DIR=instances
-EXE=p
+EXE=./coloring
 
 ######## DO NOT CHANGE BELOW THIS LINE ########
 
