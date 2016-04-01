@@ -43,8 +43,7 @@ public:
   void print(void) const {
     for(int i = 0; i < n; i++) {
       for(int j = 0; j < n; j++) {
-	if(m[i].val() == j) cout << "X ";
-	else cout << ". ";
+	cout << (m[i].val() == j ? "X " : ". ");
       }
       cout << endl;
     }
@@ -57,9 +56,8 @@ int main(int argc, char* argv[]) {
     // 'Depth first search' search engine.
     DFS<Queens> e(q);
     delete q;
-    while(Queens* s = e.next()) {
+    if(Queens* s = e.next()) {
       s->print(); delete s;
-      cout << endl << "----------------" << endl;
     }
   } catch (Exception e) {
     cerr << "Gecode exception: " << e.what() << endl;
